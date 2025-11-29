@@ -7,6 +7,8 @@ import Pricing from './pages/Pricing';
 import HowItWorks from './pages/HowItWorks';
 import Login from './pages/Login';
 
+import Docs from './pages/Docs';
+
 // Placeholder components for now
 const Placeholder = ({ title }) => (
     <div className="container section text-center">
@@ -28,7 +30,7 @@ function App() {
                         <Route path="/how-it-works" element={<HowItWorks />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/case-studies" element={<Placeholder title="Case Studies" />} />
-                        <Route path="/docs" element={<Placeholder title="Documentation" />} />
+                        <Route path="/docs" element={<Docs />} />
                         <Route path="/contact" element={<Placeholder title="Contact" />} />
                     </Routes>
                 </main>

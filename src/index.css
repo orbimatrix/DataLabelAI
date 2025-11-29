@@ -139,6 +139,15 @@
   100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
 }
 
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline; /* Changed from inline-block to allow wrapping */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -184,12 +193,18 @@ button {
   align-items: center;
   justify-content: center;
   padding: 0.875rem 1.75rem;
-  border-radius: var(--radius-full); /* More modern pill shape */
+  border-radius: var(--radius-full);
   font-weight: 600;
   letter-spacing: 0.01em;
   border: none;
   position: relative;
   overflow: hidden;
+  z-index: 1; /* Ensure button is on top */
+}
+
+.btn span, .btn svg {
+    position: relative;
+    z-index: 2; /* Ensure text/icon is above the ::after overlay */
 }
 
 .btn::after {
@@ -202,6 +217,7 @@ button {
   background: linear-gradient(rgba(255,255,255,0.2), transparent);
   opacity: 0;
   transition: opacity 0.2s;
+  z-index: 1;
 }
 
 .btn:hover::after {

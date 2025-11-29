@@ -474,19 +474,33 @@
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.2;
+        overflow-wrap: break-word; /* Ensure long words break if necessary */
+        word-wrap: break-word;
+    }
+    
+    .hero-title br {
+        display: none;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
     
     .btn-lg {
         width: 100%;
         justify-content: center;
     }
-    
-    .hero-actions {
-        flex-direction: column;
+
+    .roi-calculator {
+        padding: 1.5rem;
     }
 }
