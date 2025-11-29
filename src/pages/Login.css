@@ -11,6 +11,12 @@
   padding: var(--spacing-2xl);
 }
 
+@media (max-width: 480px) {
+  .login-container {
+    padding: var(--spacing-lg);
+  }
+}
+
 .form-group {
   margin-bottom: var(--spacing-md);
 }

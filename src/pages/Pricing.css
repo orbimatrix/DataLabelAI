@@ -42,8 +42,8 @@
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
-    overflow: visible;
-    /* Allow badge to stick out */
+    overflow: visible !important;
+    /* Force override of visual-card */
 }
 
 .pricing-card.featured {

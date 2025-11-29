@@ -30,7 +30,7 @@ const Features = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-lg items-center">
-                        <div className="order-2">
+                        <div className="order-2-md">
                             <h2>Natural Language Processing</h2>
                             <p className="text-muted mb-md">Understand text with nuance and context.</p>
                             <ul className="feature-list">
@@ -39,7 +39,7 @@ const Features = () => {
                                 <li className="flex items-center gap-sm mb-sm"><Check size={16} color="var(--color-secondary)" /> Text Classification</li>
                             </ul>
                         </div>
-                        <div className="visual-card glass-panel order-1" style={{ height: '300px' }}>
+                        <div className="visual-card glass-panel order-1-md" style={{ height: '300px' }}>
                             {/* Placeholder for NLP UI */}
                             <div className="ui-body">NLP Interface Placeholder</div>
                         </div>

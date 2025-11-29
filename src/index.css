@@ -278,4 +278,12 @@ button {
   .container {
     padding: 0 var(--spacing-md);
   }
+  
+  .order-1-md { order: 1; }
+  .order-2-md { order: 2; }
+}
+
+@media (min-width: 769px) {
+    .order-1-md { order: 1; }
+    .order-2-md { order: 2; }
 }
