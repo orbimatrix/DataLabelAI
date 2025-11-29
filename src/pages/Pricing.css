@@ -1,0 +1,101 @@
+.pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    font-weight: 600;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 28px;
+    background: var(--color-border);
+    border-radius: 14px;
+    border: none;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggle-switch.on {
+    background: var(--color-secondary);
+}
+
+.toggle-thumb {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+    box-shadow: var(--shadow-sm);
+}
+
+.toggle-switch.on .toggle-thumb {
+    transform: translateX(22px);
+}
+
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    overflow: visible;
+    /* Allow badge to stick out */
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--color-secondary);
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-secondary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: var(--shadow-md);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: var(--spacing-md) 0;
+    color: var(--color-text);
+}
+
+.currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.pricing-features {
+    list-style: none;
+}
+
+.pricing-features li {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
