@@ -13,7 +13,7 @@ const Home = () => {
                 <div className="container hero-container">
                     <div className="hero-content animate-fade-in">
                         <h1 className="hero-title">
-                            Accelerate AI Development with <span className="text-gradient">High-Quality Data</span>
+                            Accelerate AI Development with <br /> <span className="text-gradient">High-Quality Data</span>
                         </h1>
                         <p className="hero-subtitle animate-fade-in animate-delay-100">
                             The fastest way to get accurate training data. Combine automated active learning with expert human review to cut labeling costs by 60%.
