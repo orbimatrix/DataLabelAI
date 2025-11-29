@@ -1,0 +1,107 @@
+.legal-page {
+    padding-top: 80px;
+    background-color: var(--color-bg-alt);
+    min-height: 100vh;
+}
+
+.legal-header {
+    padding: 4rem 0 2rem;
+    background-color: white;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    background: white;
+    min-height: 600px;
+}
+
+.legal-sidebar {
+    border-right: 1px solid var(--color-border);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    background-color: #f8fafc;
+}
+
+.legal-nav-item {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.legal-nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-text);
+}
+
+.legal-nav-item.active {
+    background-color: white;
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-sm);
+    font-weight: 600;
+}
+
+.legal-content {
+    padding: var(--spacing-2xl);
+}
+
+.legal-section h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.last-updated {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal-section h3 {
+    font-size: 1.25rem;
+    margin: var(--spacing-xl) 0 var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.legal-section p {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .legal-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        flex-direction: row;
+        overflow-x: auto;
+        padding: var(--spacing-md);
+    }
+    
+    .legal-nav-item {
+        white-space: nowrap;
+    }
+    
+    .legal-content {
+        padding: var(--spacing-lg);
+    }
+}

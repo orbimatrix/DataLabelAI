@@ -6,8 +6,13 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import HowItWorks from './pages/HowItWorks';
 import Login from './pages/Login';
-
+import Signup from './pages/Signup';
 import Docs from './pages/Docs';
+
+import About from './pages/About';
+import Careers from './pages/Careers';
+import Contact from './pages/Contact';
+import Legal from './pages/Legal';
 
 // Placeholder components for now
 const Placeholder = ({ title }) => (
@@ -29,9 +34,20 @@ function App() {
                         <Route path="/pricing" element={<Pricing />} />
                         <Route path="/how-it-works" element={<HowItWorks />} />
                         <Route path="/login" element={<Login />} />
+                        <Route path="/signup" element={<Signup />} />
                         <Route path="/case-studies" element={<Placeholder title="Case Studies" />} />
                         <Route path="/docs" element={<Docs />} />
-                        <Route path="/contact" element={<Placeholder title="Contact" />} />
+                        
+                        {/* Company Pages */}
+                        <Route path="/about" element={<About />} />
+                        <Route path="/careers" element={<Careers />} />
+                        <Route path="/contact" element={<Contact />} />
+                        
+                        {/* Legal Pages */}
+                        <Route path="/legal" element={<Legal />} />
+                        <Route path="/privacy" element={<Legal />} />
+                        <Route path="/terms" element={<Legal />} />
+                        <Route path="/security" element={<Legal />} />
                     </Routes>
                 </main>
                 <Footer />

@@ -1,0 +1,80 @@
+.signup-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-alt);
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 450px;
+    /* Slightly wider than login for more fields */
+    padding: var(--spacing-2xl);
+    background: white;
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        padding: var(--spacing-lg);
+    }
+
+    .signup-page {
+        align-items: flex-start;
+        /* Allow scrolling on small screens if height is small */
+        padding-top: var(--spacing-3xl);
+    }
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.divider {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+    position: relative;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: var(--color-border);
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}

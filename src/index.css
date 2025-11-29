@@ -207,6 +207,10 @@ button {
     z-index: 2; /* Ensure text/icon is above the ::after overlay */
 }
 
+.full-width {
+    width: 100%;
+}
+
 .btn::after {
   content: '';
   position: absolute;
